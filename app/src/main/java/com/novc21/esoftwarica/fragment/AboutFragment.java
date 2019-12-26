@@ -27,15 +27,3 @@ public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_about, container, false);
-        webView= view.findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setAppCacheEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://softwarica.edu.np/");
-        return view;
-
-    }
-
-}
